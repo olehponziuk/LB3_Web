@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Ultra&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Таймер</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <h1>TTimerYou</h1>
+  <p>Введіть назву процесу:</p>
+  <input type="text" id="processInput">
+  <p>Введіть час у хвилинах:</p>
+  <input type="number" id="timeInput" value="1" min="1">
+  <button id="startTimer">Запустити таймер</button>
+  <button id="stopTimer" disabled>Зупинити таймер</button>
+
+  <h2 id="countdown"></h2>
+  <h2 id="procName"></h2>
+
+  <div name="recordsDiv">
+    <ul id="records">
+    </ul>
+  </div>
+
+  <audio id="alarmSound" src="alarm.mp3" preload="auto"></audio>
+
+  <script type="module" src="index.js"></script>
+</body>
+</html>
